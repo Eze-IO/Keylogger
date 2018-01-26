@@ -12,9 +12,9 @@ namespace Eze.IO.Workspace
     /// <summary>
     /// Class for detecting keyboard key presses
     /// </summary>
-    /// <exception cref="ObjectNotFoundException">Exception thrown when Loggedkey object has null values or an invalid object on OnKeyPressed event</exception>
+    /// <exception cref="ObjectNotFoundException">Exception thrown when <see cref="Loggedkey"/> has a null or invalid object on OnKeyPressed event</exception>
     /// <exception cref="InvalidOperationException">Exception thrown when virtual key cannot be obtained</exception>
-    /// <exception cref="AccessViolationException">Error occured in the Windows API</exception>
+    /// <exception cref="AccessViolationException">Exception thrown when key information is not accessible</exception>
     public static class DetectKey
     {
         private const int WH_KEYBOARD_LL = 13;
