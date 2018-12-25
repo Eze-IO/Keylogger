@@ -1,0 +1,6 @@
+C:\Users\ezeah\Documents\GitHub\Keylogger\src\bin\Debug\Keyboard.dll
+C:\Users\ezeah\Documents\GitHub\Keylogger\src\bin\Debug\Keyboard.pdb
+C:\Users\ezeah\Documents\GitHub\Keylogger\src\obj\Debug\Keyboard.csprojAssemblyReference.cache
+C:\Users\ezeah\Documents\GitHub\Keylogger\src\obj\Debug\Keyboard.csproj.CoreCompileInputs.cache
+C:\Users\ezeah\Documents\GitHub\Keylogger\src\obj\Debug\Keyboard.dll
+C:\Users\ezeah\Documents\GitHub\Keylogger\src\obj\Debug\Keyboard.pdb
