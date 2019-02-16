@@ -9,7 +9,7 @@ static void Main(string[] args)
     DetectKey.OnKeyPressed += OnKeyPress_Handled;
 }
 
-protectecd void OnKeyPress_Handled(LoggedKeys keys)
+protected void OnKeyPress_Handled(LoggedKeys keys)
 {
    VirtualKeys k = keys.Key;
    if(k == VirtualKeys.Enter)
