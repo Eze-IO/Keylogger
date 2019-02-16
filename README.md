@@ -14,7 +14,7 @@ protected void OnKeyPress_Handled(LoggedKeys keys)
    VirtualKeys k = keys.Key;
    if(k == VirtualKeys.Enter)
    {
-      //User pressed 'enter'key
+      //User pressed 'enter' key
    }
 }
 ```
