@@ -1,0 +1,31 @@
+name: build
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+
+jobs:
+  build:
+    # The library uses the Windows keyboard hook API
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 8.0.x
+
+      - name: Restore
+        run: dotnet restore Keylogger.sln
+
+      - name: Build
+        run: dotnet build Keylogger.sln -c Release --no-restore
+
+      - name: Pack
+        run: dotnet pack src/Keyboard.csproj -c Release --no-build -o artifacts
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: nuget
+          path: artifacts/*.nupkg

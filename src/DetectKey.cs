@@ -5,14 +5,13 @@ using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
-using System.Data;
 
 namespace Eze.IO.Workspace
 {
     /// <summary>
     /// Class for detecting keyboard key presses
     /// </summary>
-    /// <exception cref="ObjectNotFoundException">Exception thrown when <see cref="Loggedkey"/> has a null or invalid object on OnKeyPressed event</exception>
+    /// <exception cref="InvalidOperationException">Exception thrown when <see cref="LoggedKeys"/> has a null or invalid object on OnKeyPressed event</exception>
     /// <exception cref="InvalidOperationException">Exception thrown when virtual key cannot be obtained</exception>
     /// <exception cref="AccessViolationException">Exception thrown when key information is not accessible</exception>
     public static class DetectKey
@@ -65,7 +64,7 @@ namespace Eze.IO.Workspace
                 {
                     if (er is ArgumentNullException || er is ArgumentException)
                     {
-                        throw new ObjectNotFoundException("Failed to get key name and key type!");
+                        throw new InvalidOperationException("Failed to get key name and key type!", er);
                     }
                     else if (er is AccessViolationException)
                     {
