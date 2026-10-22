@@ -32,5 +32,9 @@ namespace Eze.IO.Workspace
         public void Dispose() { KeyName = null; Key = 0; }
     }
 
+    /// <summary>
+    /// Handler for the key pressed event
+    /// </summary>
+    /// <param name="keys">Information about the key that was pressed</param>
     public delegate void KeyPressedHandler(LoggedKeys keys);
 }
