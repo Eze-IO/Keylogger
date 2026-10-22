@@ -1,4 +1,4 @@
-# Keyboard
+# KeyLogger
 
 [![NuGet](https://img.shields.io/nuget/v/EzeIO.Keylogger.svg)](https://www.nuget.org/packages/EzeIO.Keylogger) [![build](https://github.com/Eze-IO/Keylogger/actions/workflows/build.yml/badge.svg)](https://github.com/Eze-IO/Keylogger/actions/workflows/build.yml)
 
