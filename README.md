@@ -6,6 +6,18 @@
 
 Targets .NET Framework 4.6.2+ and .NET 8 (`net8.0-windows`).
 
+## Intended use
+
+This is a low-level input library for building legitimate Windows software: global
+hotkeys and shortcut managers, accessibility and assistive-input tools, automation and
+macro utilities, kiosk/point-of-sale input handling, and games that need raw key state.
+
+Capturing keystrokes is sensitive. Use it only where you have a clear, lawful basis and,
+where applicable, the informed consent of the people whose input is captured. Do not use
+it to covertly record another person's keystrokes, harvest credentials, or otherwise
+monitor someone without their knowledge — that is likely illegal and is not a supported
+use case. You are responsible for complying with the laws and policies that apply to you.
+
 ## Usage
 
 Install the package, then use the namespace:
